@@ -1,0 +1,7 @@
+Hello, This is Abhay Pasalkar, a Computer Science graduate from the Class of 2024. Over the past few months, I have been strengthening my skills in Python and AI/ML while building hands-on projects in automation and problem-solving. 
+
+My preparation for the Indian Civil Services has also helped me develop strong analytical thinking, discipline, and the ability to learn complex concepts quickly. 
+
+I am now looking for an opportunity where I can apply my technical skills and continue learning. This GitHub showcases my programs, projects, and a continuous learning journey as I grow as a developer.
+
+Regards.
