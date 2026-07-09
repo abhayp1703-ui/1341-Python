@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <style>
+        body{
+            margin:0;
+            font-family:Arial;
+        }
+
+    /* Parent container */
+        .container{
+            display:flex;
+            height:100vh;
+        }
+
+    /* Left block */
+        .left-box{
+            width:50%;
+        }
+
+        .left-box img{
+            width:100%;
+            height:100%;
+            object-fit:cover; /* Ensures the image covers the entire block */
+        }
+
+    /* Right block */
+        .right-box{
+            width:50%;
+            display: flex;
+            flex-direction: column; /* The signup and input fields are arranged in a column */
+            justify-content:center;
+            align-items:center;
+            background-color: white;
+        }
+        input{
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            outline: none;
+        }
+        input:focus{
+            border-color: #66afe9;
+            box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+        }
+        button{
+            padding: 10px 20px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Block -->
+    <div class="left-box">
+        <img src="insta.jpg" alt="Image">
+    </div>
+
+    <!-- Right Block -->
+    <div class="right-box">
+
+        <h2>Sign Up</h2>
+        <hr>
+
+        <form>
+            <table cellpadding="15">
+                
+                <tr>
+                    <td>Email :</td>
+                    <td>
+                        <input type="email"
+                               placeholder="Enter your email"
+                               required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Password :</td>
+                    <td>
+                        <input type="password"
+                               placeholder="Enter your password"
+                               required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Confirm Password :</td>
+                    <td>
+                        <input type="password"
+                               placeholder="Confirm password"
+                               required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="submit">
+                            Sign Up
+                        </button>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
