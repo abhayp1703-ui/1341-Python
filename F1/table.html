@@ -3,11 +3,26 @@
 <head>
     <title>F1 - 2026 Season Stats</title>
     <style>
+        div.table_view{
+            overflow-x: auto;
+        }
         body{
             font-family: Arial, sans-serif;
             margin:40px;
         }
-
+        video.bg-video{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        div.content{
+            position: relative;
+            z-index: 1;
+        }
         table{
             border-collapse: collapse;
             border-spacing: 1px;
@@ -20,11 +35,12 @@
             padding: 8px 15px;
             text-align: center;
             font-size: 18px;
+            background-color: rgba(255, 255, 255, 0.8);
         }
 
         th{
             font-weight: bold;
-            background-color: #f8f8f8;
+            background-color: rgba(248, 248, 248, 0.8);
         }
         td:first-child {
             padding: 0;         /* Changes here reflect in first IMG column */
@@ -38,101 +54,110 @@
             object-fit: cover;     /* Fills the cell, crops if necessary */
             display: block;        /* Removes the small gap below images */
         }
+        
     </style>
 </head>
 
 <body>
-<center>
-<table>
-    <tr>
-        <th>Driver</th>
-        <th>Name</th>
-        <th>Race Number</th>
-        <th>Team</th>
-        <th>Wins</th>
-        <th>Podium</th>
-        <th>Championships</th>
-    </tr>
+    <video class="bg-video" autoplay muted loop>
+        <source src="f1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+        <div class="content">
+        <center>
+            <div class="table_view">
+                <table>
+                    <tr>
+                        <th>Driver</th>
+                        <th>Name</th>
+                        <th>Race Number</th>
+                        <th>Team</th>
+                        <th>Wins</th>
+                        <th>Podium</th>
+                        <th>Championships</th>
+                    </tr>
 
-    <tr> 
-        <td>
-            <a href="max.html">
-            <img src="max.jpg" alt="Max Verstappen" width="150" height="100">
-            </a>
-        </td>
-        <td>Max Verstappen</td>
-        <td>33</td>
-        <td>Oracle Red Bull Racing</td>
-        <td>4</td>
-        <td>1</td>
-        <td>7</td>
-    </tr>
-    <tr>
-        <td>
-            <a href="lewis.html">
-            <img src="lewis.jpg" alt="Lewis Hamilton" width="150" height="100">
-            </a>
-        </td>
-        <td>Lewis Hamilton</td>
-        <td>44</td>
-        <td>Scuderia Ferrari HP</td>
-        <td>5</td>
-        <td>3</td>
-        <td>11</td>
-    </tr>
-    <tr>
-        <td>
-            <a href="kimi.html">
-            <img src="kimi.jpg" alt="Kimi Antonelli" width="150" height="100">
-            </a>
-        </td>
-        <td>Kimi Antonelli</td>
-        <td>12</td>
-        <td>Mercedes AMG Petronas</td>
-        <td>3</td>
-        <td>1</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>
-            <a href="charles.html">
-            <img src="charles.jpg" alt="Charles LeClerc" width="150" height="100">
-            </a>
-        </td>
-        <td>Charles LeClerc</td>
-        <td>16</td>
-        <td>Scuderia Ferrari HP</td>
-        <td>3</td>
-        <td>1</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>
-            <a href="george.html">
-            <img src="george.jpg" alt="George Russell" width="150" height="100">
-            </a>
-        </td>
-        <td>George Russell</td>
-        <td>63</td>
-        <td>Mercedes AMG Petronas</td>
-        <td>1</td>
-        <td>3</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>
-            <a href="carlos.html">
-            <img src="carlos.jpg" alt="Carlos Sainz" width="150" height="100">
-            </a>
-        </td>
-        <td>Carlos Sainz</td>
-        <td>55</td>
-        <td>Atlassian Williams</td>
-        <td>2</td>
-        <td>0</td>
-        <td>0</td>
-    </tr>
-</table>
-</center>
+                    <tr> 
+                        <td>
+                            <a href="max.html">
+                            <img src="max.jpg" alt="Max Verstappen" width="150" height="100">
+                            </a>
+                        </td>
+                        <td>Max Verstappen</td>
+                        <td>33</td>
+                        <td>Oracle Red Bull Racing</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="lewis.html">
+                            <img src="lewis.jpg" alt="Lewis Hamilton" width="150" height="100">
+                            </a>
+                        </td>
+                        <td>Lewis Hamilton</td>
+                        <td>44</td>
+                        <td>Scuderia Ferrari HP</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="kimi.html">
+                            <img src="kimi.jpg" alt="Kimi Antonelli" width="150" height="100">
+                            </a>
+                        </td>
+                        <td>Kimi Antonelli</td>
+                        <td>12</td>
+                        <td>Mercedes AMG Petronas</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="charles.html">
+                            <img src="charles.jpg" alt="Charles LeClerc" width="150" height="100">
+                            </a>
+                        </td>
+                        <td>Charles LeClerc</td>
+                        <td>16</td>
+                        <td>Scuderia Ferrari HP</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="george.html">
+                            <img src="george.jpg" alt="George Russell" width="150" height="100">
+                            </a>
+                        </td>
+                        <td>George Russell</td>
+                        <td>63</td>
+                        <td>Mercedes AMG Petronas</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="carlos.html">
+                            <img src="carlos.jpg" alt="Carlos Sainz" width="150" height="100">
+                            </a>
+                        </td>
+                        <td>Carlos Sainz</td>
+                        <td>55</td>
+                        <td>Atlassian Williams</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+            </div>
+        </center>
+    </div>  
 </body>
 </html>
