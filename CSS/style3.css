@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    margin: 25px 25px;
+}
+
+#h21 {
+    color: red;
+    text-align: center;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.container {
+    background-color: rgb(47, 49, 47);
+    height: 600px;
+    width: 300px;
+    padding: 50px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.circle1 {
+    width: 160px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 5px;
+    margin-bottom: 50px;
+}
+
+.circle2 {
+    width: 160px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(255, 204, 0);
+    margin: 5px;
+    margin-bottom: 50px;
+}
+
+.circle3 {
+    width: 160px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(5, 255, 5);
+    margin: 5px;
+    margin-bottom: 50px;
+}
